@@ -101,6 +101,7 @@ async function excluiConta({ nome }) {
 
     if (resposta === "S") {
         await escrever('./usuario.json', '');
+        await escrever('./tarefas.json', '');
         console.clear();
         fechaPrograma();
     } else {
